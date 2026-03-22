@@ -17,6 +17,8 @@
                 <ul class="nav-links">
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#demo">Free Demo</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -71,24 +73,7 @@
                     </ul>
                 </div>
 
-                <!-- Service 2: RLHF -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
-                        </svg>
-                    </div>
-                    <h3>Human Feedback for RLHF</h3>
-                    <p>Human feedback collection to help align AI models with human values and preferences. We provide thoughtful evaluation for language model improvement.</p>
-                    <ul class="service-features">
-                        <li>Response Ranking</li>
-                        <li>Preference Labeling</li>
-                        <li>Quality Assessment</li>
-                        <li>Harmfulness Detection</li>
-                    </ul>
-                </div>
-
-                <!-- Service 3: LLM Evaluation -->
+                <!-- Service 2: LLM Evaluation -->
                 <div class="service-card">
                     <div class="service-icon">
                         <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -105,7 +90,7 @@
                     </ul>
                 </div>
 
-                <!-- Service 4: Red Teaming -->
+                <!-- Service 3: Red Teaming -->
                 <div class="service-card">
                     <div class="service-icon">
                         <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -154,31 +139,190 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Experience / Social Proof Section -->
+    <section class="experience">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Lysian AI</h2>
-                    <p>Lysian AI is pioneering AI-first evaluation workflows that eliminate manual bottlenecks. Our proprietary platform automatically generates comprehensive test suites based on your scenarios, systematically evaluates your models, and delivers objective, data-driven metrics—all without manual intervention.</p>
-                    <p>We're designed for organizations embracing AI adoption at scale. Our automated workflows reduce evaluation time by up to 70% while seamlessly integrating into your existing development pipeline. Beyond automated evaluation, we provide data labeling, RLHF training, and AI security testing services.</p>
-                    <div class="about-stats">
-                        <div class="about-stat">
-                            <h4>Founded</h4>
-                            <p>2026</p>
+            <h2 class="section-title">Trusted by Teams Building Better AI</h2>
+            <p class="section-subtitle">See how companies use Lysian AI to accelerate model development and raise the bar on quality</p>
+
+            <div class="carousel-wrapper">
+                <div class="carousel-viewport">
+                    <div class="carousel-track" id="experienceTrack">
+
+                        <div class="experience-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&auto=format&fit=crop" alt="NovaMind team working">
+                                <span class="company-industry">Conversational AI</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="company-logo-placeholder">NovaMind</div>
+                                <blockquote>"Lysian's automated evaluation platform cut our model testing cycle from two weeks to under three days. We now ship with confidence knowing every release has been systematically benchmarked."</blockquote>
+                                <div class="experience-result">
+                                    <span class="result-number">78%</span>
+                                    <span class="result-label">reduction in evaluation time</span>
+                                </div>
+                                <div class="experience-author">
+                                    <div class="author-avatar">JL</div>
+                                    <div><strong>Jordan Lee</strong><p>Head of ML Engineering, NovaMind</p></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="about-stat">
-                            <h4>Focus</h4>
-                            <p>AI Automation</p>
+
+                        <div class="experience-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&auto=format&fit=crop" alt="HealthAxis medical AI">
+                                <span class="company-industry">Healthcare AI</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="company-logo-placeholder">HealthAxis</div>
+                                <blockquote>"We needed high-quality RLHF data from domain experts to align our medical assistant. Lysian delivered precise, consistent annotations that directly improved our model's safety and accuracy."</blockquote>
+                                <div class="experience-result">
+                                    <span class="result-number">41%</span>
+                                    <span class="result-label">improvement in response accuracy</span>
+                                </div>
+                                <div class="experience-author">
+                                    <div class="author-avatar">SR</div>
+                                    <div><strong>Sofia Reyes</strong><p>AI Research Lead, HealthAxis</p></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="about-stat">
-                            <h4>Approach</h4>
-                            <p>Workflow-First</p>
+
+                        <div class="experience-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop" alt="Arctiq security">
+                                <span class="company-industry">FinTech</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="company-logo-placeholder">Arctiq</div>
+                                <blockquote>"Before Lysian, our red teaming was ad hoc and inconsistent. Their adversarial testing service exposed prompt injection vulnerabilities we never would have caught on our own — before they reached production."</blockquote>
+                                <div class="experience-result">
+                                    <span class="result-number">3x</span>
+                                    <span class="result-label">more vulnerabilities caught pre-launch</span>
+                                </div>
+                                <div class="experience-author">
+                                    <div class="author-avatar">DK</div>
+                                    <div><strong>Daniel Kim</strong><p>VP of AI Safety, Arctiq</p></div>
+                                </div>
+                            </div>
                         </div>
+
+                        <div class="experience-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop" alt="Orion Labs analytics">
+                                <span class="company-industry">Enterprise AI</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="company-logo-placeholder">Orion Labs</div>
+                                <blockquote>"Lysian's test suite generation automatically covers edge cases we hadn't thought of. The objective metrics gave our leadership team the data they needed to greenlight our next model rollout."</blockquote>
+                                <div class="experience-result">
+                                    <span class="result-number">5x</span>
+                                    <span class="result-label">increase in test coverage</span>
+                                </div>
+                                <div class="experience-author">
+                                    <div class="author-avatar">AM</div>
+                                    <div><strong>Aisha Mohammed</strong><p>Director of Product AI, Orion Labs</p></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&auto=format&fit=crop" alt="Synthex generative AI">
+                                <span class="company-industry">Generative AI</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="company-logo-placeholder">Synthex</div>
+                                <blockquote>"Lysian's data labeling team handled our multimodal dataset with remarkable precision. The quality of annotations directly translated into a measurable boost in our model's generation quality."</blockquote>
+                                <div class="experience-result">
+                                    <span class="result-number">33%</span>
+                                    <span class="result-label">boost in output quality scores</span>
+                                </div>
+                                <div class="experience-author">
+                                    <div class="author-avatar">PW</div>
+                                    <div><strong>Priya Watts</strong><p>ML Platform Lead, Synthex</p></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=600&auto=format&fit=crop" alt="Veridian legal tech">
+                                <span class="company-industry">Legal Tech</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="company-logo-placeholder">Veridian</div>
+                                <blockquote>"We integrated Lysian's evaluation API into our CI/CD pipeline. Every model update now gets automatically stress-tested before it touches our customers — it's become a non-negotiable part of our workflow."</blockquote>
+                                <div class="experience-result">
+                                    <span class="result-number">Zero</span>
+                                    <span class="result-label">regressions shipped since integration</span>
+                                </div>
+                                <div class="experience-author">
+                                    <div class="author-avatar">MT</div>
+                                    <div><strong>Marcus Turner</strong><p>CTO, Veridian</p></div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop" alt="Team collaboration">
+
+            </div>
+
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+        <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Meet the Team</h2>
+            <p class="section-subtitle">The people behind Lysian AI — builders, researchers, and operators passionate about making AI development faster and more reliable</p>
+
+            <!-- Founder -->
+            <div class="founder-card">
+                <div class="founder-avatar">
+                    <div class="avatar-placeholder large">HX</div>
+                </div>
+                <div class="founder-info">
+                    <div class="founder-label">Founder & CEO</div>
+                    <h3>Huaibo Xu</h3>
+                    <p>Huaibo founded Lysian AI with a vision to eliminate the manual bottlenecks that slow down AI development. Previously a software engineer at Microsoft, he spent years frustrated by the lack of systematic, automated tooling for model evaluation — so he built it. He leads product strategy, research direction, and company growth.</p>
+                    <div class="founder-tags">
+                        <span>LLM Evaluation</span>
+                        <span>ML Infrastructure</span>
+                        <span>AI Safety</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rest of Team -->
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="avatar-placeholder">MR</div>
+                    <div class="team-role">Head of Data Operations</div>
+                    <h4>Maria Rodriguez</h4>
+                    <p>10+ years managing annotation workflows at scale. Ensures every labeling and RLHF project meets strict quality and consistency standards.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="avatar-placeholder">TP</div>
+                    <div class="team-role">Lead AI Researcher</div>
+                    <h4>Thomas Park</h4>
+                    <p>PhD in NLP, specialized in model alignment and adversarial robustness. Drives the science behind our automated evaluation and red teaming services.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="avatar-placeholder">SG</div>
+                    <div class="team-role">Chief Sales & Customer Success</div>
+                    <h4>Sisi Gong</h4>
+                    <p>Drives growth and ensures every client gets exceptional value. Sisi brings deep experience in enterprise sales and building long-term partnerships across the AI industry.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="avatar-placeholder">CL</div>
+                    <div class="team-role">Lead QA Engineer</div>
+                    <h4>Chris Liu</h4>
+                    <p>Owns quality across every data and evaluation deliverable. Designs and enforces QA processes that ensure consistency, accuracy, and reliability at scale.</p>
                 </div>
             </div>
         </div>
@@ -209,10 +353,67 @@
                     <h3>E-commerce</h3>
                     <p>Recommendation systems and customer support AI</p>
                 </div>
-                <div class="industry-card">
-                    <h3>Research</h3>
-                    <p>Academic institutions and research laboratories</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Lysian AI</h2>
+                    <p>Lysian AI is pioneering AI-first evaluation workflows that eliminate manual bottlenecks. Our proprietary platform automatically generates comprehensive test suites based on your scenarios, systematically evaluates your models, and delivers objective, data-driven metrics—all without manual intervention.</p>
+                    <p>We're designed for organizations embracing AI adoption at scale. Our automated workflows reduce evaluation time by up to 70% while seamlessly integrating into your existing development pipeline. Beyond automated evaluation, we provide data labeling, RLHF training, and AI security testing services.</p>
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <h4>Founded</h4>
+                            <p>2026</p>
+                        </div>
+                        <div class="about-stat">
+                            <h4>Focus</h4>
+                            <p>AI Automation</p>
+                        </div>
+                        <div class="about-stat">
+                            <h4>Approach</h4>
+                            <p>Workflow-First</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop" alt="Team collaboration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo / Pilot Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-badge">Limited Availability</div>
+                <h2>Try Lysian AI Free — No Commitment</h2>
+                <p>We offer a free demo or pilot program for companies interested in experiencing our automated LLM evaluation, data labeling, or AI security testing services firsthand. Bring your own use case and see real results before you commit.</p>
+                <div class="demo-perks">
+                    <div class="demo-perk">
+                        <span class="perk-icon">✦</span>
+                        <span>Full platform access during pilot</span>
+                    </div>
+                    <div class="demo-perk">
+                        <span class="perk-icon">✦</span>
+                        <span>Dedicated onboarding support</span>
+                    </div>
+                    <div class="demo-perk">
+                        <span class="perk-icon">✦</span>
+                        <span>Custom evaluation on your own data</span>
+                    </div>
+                    <div class="demo-perk">
+                        <span class="perk-icon">✦</span>
+                        <span>No credit card or contract required</span>
+                    </div>
+                </div>
+                <a href="mailto:contact@lysianai.com?subject=Free Demo / Pilot Request" class="demo-cta">Request a Free Demo</a>
+                <p class="demo-note">Or simply reach out at <a href="mailto:contact@lysianai.com">contact@lysianai.com</a> — we'd love to hear from you.</p>
             </div>
         </div>
     </section>
@@ -267,5 +468,155 @@
             </div>
         </div>
     </footer>
+    <script>
+        (function () {
+            const track = document.getElementById('experienceTrack');
+            const dotsContainer = document.getElementById('carouselDots');
+            const viewport = track.closest('.carousel-viewport');
+            const cards = Array.from(track.querySelectorAll('.experience-card'));
+
+            let currentOffset = 0;
+            let dragging = false;
+            let dragStartX = 0;
+            let dragStartOffset = 0;
+            let currentSnap = 0;
+            let autoTimer = null;
+            const AUTO_DELAY = 3500;
+
+            function visibleCount() {
+                return window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+            }
+
+            function cardWidth() {
+                return cards[0].offsetWidth + 24;
+            }
+
+            function totalSlides() {
+                return Math.ceil(cards.length / visibleCount());
+            }
+
+            function maxOffset() {
+                return (cards.length - visibleCount()) * cardWidth();
+            }
+
+            function clamp(val, min, max) {
+                return Math.max(min, Math.min(max, val));
+            }
+
+            function applyOffset(px, animate) {
+                track.style.transition = animate ? 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)' : 'none';
+                track.style.transform = 'translateX(' + (-px) + 'px)';
+            }
+
+            function goToSnap(index, animate) {
+                currentSnap = clamp(index, 0, totalSlides() - 1);
+                const vc = visibleCount();
+                currentOffset = clamp(currentSnap * cardWidth() * vc, 0, maxOffset());
+                applyOffset(currentOffset, animate !== false);
+                updateDots();
+            }
+
+            function snapToNearest() {
+                const cw = cardWidth() * visibleCount();
+                goToSnap(Math.round(currentOffset / cw), true);
+            }
+
+            function buildDots() {
+                dotsContainer.innerHTML = '';
+                for (let i = 0; i < totalSlides(); i++) {
+                    const dot = document.createElement('span');
+                    dot.className = 'carousel-dot' + (i === currentSnap ? ' active' : '');
+                    dotsContainer.appendChild(dot);
+                }
+            }
+
+            function updateDots() {
+                dotsContainer.querySelectorAll('.carousel-dot').forEach(function (d, i) {
+                    d.classList.toggle('active', i === currentSnap);
+                });
+            }
+
+            // Auto-scroll
+            function startAuto() {
+                stopAuto();
+                autoTimer = setInterval(function () {
+                    const next = currentSnap + 1 >= totalSlides() ? 0 : currentSnap + 1;
+                    goToSnap(next, true);
+                }, AUTO_DELAY);
+            }
+
+            function stopAuto() {
+                if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+            }
+
+            // Pause on hover
+            viewport.addEventListener('mouseenter', stopAuto);
+            viewport.addEventListener('mouseleave', function () { if (!dragging) startAuto(); });
+
+            // Mouse drag
+            track.addEventListener('mousedown', function (e) {
+                dragging = true;
+                dragStartX = e.clientX;
+                dragStartOffset = currentOffset;
+                track.style.transition = 'none';
+                track.style.cursor = 'grabbing';
+                stopAuto();
+                e.preventDefault();
+            });
+
+            window.addEventListener('mousemove', function (e) {
+                if (!dragging) return;
+                const delta = dragStartX - e.clientX;
+                currentOffset = clamp(dragStartOffset + delta, 0, maxOffset());
+                applyOffset(currentOffset, false);
+            });
+
+            window.addEventListener('mouseup', function () {
+                if (!dragging) return;
+                dragging = false;
+                track.style.cursor = 'grab';
+                snapToNearest();
+                startAuto();
+            });
+
+            // Touch drag
+            track.addEventListener('touchstart', function (e) {
+                dragStartX = e.touches[0].clientX;
+                dragStartOffset = currentOffset;
+                track.style.transition = 'none';
+                stopAuto();
+            }, { passive: true });
+
+            track.addEventListener('touchmove', function (e) {
+                const delta = dragStartX - e.touches[0].clientX;
+                currentOffset = clamp(dragStartOffset + delta, 0, maxOffset());
+                applyOffset(currentOffset, false);
+            }, { passive: true });
+
+            track.addEventListener('touchend', function () {
+                snapToNearest();
+                startAuto();
+            });
+
+            track.addEventListener('dragstart', function (e) { e.preventDefault(); });
+
+            let resizeTimer;
+            window.addEventListener('resize', function () {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function () {
+                    stopAuto();
+                    currentSnap = 0;
+                    currentOffset = 0;
+                    buildDots();
+                    applyOffset(0, false);
+                    startAuto();
+                }, 150);
+            });
+
+            buildDots();
+            applyOffset(0, false);
+            startAuto();
+        })();
+    </script>
 </body>
 </html>
