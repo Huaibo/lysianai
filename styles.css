@@ -6,15 +6,15 @@
 }
 
 :root {
-    --primary-color: #2563eb;
-    --primary-dark: #1e40af;
-    --secondary-color: #0891b2;
-    --text-dark: #1f2937;
+    --primary-color: #4f46e5;
+    --primary-dark: #3730a3;
+    --secondary-color: #818cf8;
+    --text-dark: #111827;
     --text-light: #6b7280;
-    --bg-light: #f9fafb;
+    --bg-light: #f5f3ff;
     --bg-white: #ffffff;
-    --border-color: #e5e7eb;
-    --accent-color: #7c3aed;
+    --border-color: #e0ddf8;
+    --accent-color: #f59e0b;
 }
 
 body {
@@ -33,7 +33,7 @@ body {
 /* Header and Navigation */
 header {
     background-color: var(--bg-white);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--border-color);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -49,10 +49,18 @@ header {
     align-items: center;
 }
 
-.logo h1 {
-    font-size: 1.5rem;
-    color: var(--primary-color);
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+}
+
+.logo-link span {
+    font-size: 1.35rem;
     font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: -0.01em;
 }
 
 .nav-links {
@@ -74,7 +82,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
     color: white;
     padding: 5rem 0;
     text-align: center;
@@ -305,8 +313,8 @@ section {
     grid-template-columns: auto 1fr;
     gap: 2.5rem;
     align-items: start;
-    background: linear-gradient(135deg, #eff6ff, #f5f3ff);
-    border: 1px solid #ddd6fe;
+    background: linear-gradient(135deg, #eef2ff, #fffbeb);
+    border: 1px solid #c7d2fe;
     border-radius: 16px;
     padding: 2.5rem;
     margin-bottom: 3rem;
@@ -346,7 +354,7 @@ section {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--accent-color);
-    background: rgba(124, 58, 237, 0.1);
+    background: rgba(245, 158, 11, 0.1);
     padding: 0.3rem 0.85rem;
     border-radius: 20px;
     margin-bottom: 0.5rem;
@@ -376,8 +384,8 @@ section {
     font-size: 0.8rem;
     font-weight: 600;
     color: var(--primary-color);
-    background: rgba(37, 99, 235, 0.08);
-    border: 1px solid rgba(37, 99, 235, 0.2);
+    background: rgba(79, 70, 229, 0.08);
+    border: 1px solid rgba(79, 70, 229, 0.2);
     padding: 0.3rem 0.75rem;
     border-radius: 20px;
 }
@@ -608,7 +616,7 @@ section {
     font-size: 1rem;
     font-weight: 700;
     color: var(--primary-color);
-    background: linear-gradient(135deg, #eff6ff, #e0e7ff);
+    background: linear-gradient(135deg, #eef2ff, #fffbeb);
     padding: 0.4rem 0.9rem;
     border-radius: 8px;
     letter-spacing: 0.02em;
@@ -630,7 +638,7 @@ section {
     display: flex;
     align-items: baseline;
     gap: 0.5rem;
-    background: linear-gradient(135deg, #eff6ff, #f5f3ff);
+    background: linear-gradient(135deg, #eef2ff, #fffbeb);
     border-radius: 8px;
     padding: 0.75rem 1rem;
 }
@@ -683,7 +691,7 @@ section {
 
 /* Demo / Pilot Section */
 .demo {
-    background: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
     color: white;
     text-align: center;
 }
@@ -741,7 +749,7 @@ section {
 }
 
 .perk-icon {
-    color: #a5b4fc;
+    color: #fcd34d;
     font-size: 1rem;
     flex-shrink: 0;
 }
@@ -770,13 +778,13 @@ section {
 }
 
 .demo-note a {
-    color: #c4b5fd;
+    color: #a5b4fc;
     text-decoration: underline;
 }
 
 /* Contact Section */
 .contact {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
     color: white;
 }
 
@@ -823,6 +831,19 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 3rem;
     margin-bottom: 2rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo span {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: white;
 }
 
 .footer-section h3 {

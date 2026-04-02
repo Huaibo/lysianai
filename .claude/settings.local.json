@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/huaiboxu/source/repos/annotation//**)",
+      "Read(//c/Users/huaiboxu/source/repos/annotation/**)"
+    ]
+  }
+}
